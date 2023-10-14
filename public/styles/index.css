@@ -1,0 +1,147 @@
+ body{background-image: url("/images/bg.jpg"); 
+  height:100%;
+  background-size: cover;
+  background-attachment:fixed; 
+  background-repeat: no-repeat;
+  background-position: center;}
+*{
+  margin:0;
+  height: 100%;
+}
+
+.icon
+{
+  display: flex;
+  height: 100px;
+}
+.icon1
+{
+  margin-top:30px;
+  margin-left: 40px;
+  display:flex; 
+  align-items: center;
+  height:.86rem;
+}
+.icon2
+{
+  margin-top:30px;
+  margin-left: 100px;
+  display:flex; 
+  align-items: center;
+  height:.90rem;
+}
+.para
+{
+  margin-left: 7px;
+  height:.84rem;
+}
+.today
+{
+  display:flex;
+  justify-content:center;
+  background-color: black;
+  color: white;
+  height: 60px;
+  width:400px;
+  border-radius: 10px;
+  align-items: center;
+  margin-top:10px;
+  margin-left:37%;
+  
+  }
+  .list
+  {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left:37%;
+  width:400px;
+  margin-top:30px;
+  height:auto;
+
+  }
+  .checkbox
+  {
+  height: 15px;
+  width:15px;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  background-color: black;
+  margin-top:22.5px;
+  
+  }
+  .tasks
+  {
+    display:flex;
+    width:400px;
+    height:60px;
+    justify-content: center;
+    background-color:white;
+    margin-top:3px;
+
+  }
+  #add
+  {
+    height: 49px;
+    width:50px;
+    background-color:black;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+  }
+  #text
+  {
+    display:flex;
+    
+    height: 47px;
+    width:347px;
+    border: none;
+    font-size:.9rem ;
+    
+  }
+  p
+  {
+  height: 40px;
+  width:350px;
+  color: black; 
+  display: flex;
+  font-size:1.1rem ;
+  align-items: center;
+  justify-content: center;
+  }
+.form
+{
+  display:flex;
+  height:40px;
+  margin-top: 3px;
+  border:none;
+  
+}
+.strike
+{
+  text-decoration: line-through;
+}
+#empty
+{
+  height:50px;
+  width:180px;
+  background-color: black;
+  color:white;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  border-radius:6%;
+  margin-top:40px;
+}
+footer
+{
+
+align-items: center;
+margin-top:30px;
+justify-content: center;
+display: flex;
+}

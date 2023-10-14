@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>todo list</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/styles/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<body>
+   <div class="main">
+  <div class="icon">
+    <div class="icon1">
+    <i class="fa-solid fa-calendar-days" style="color: #000000;"></i>
+   <h5 class="para">Today</h5>
+   </div>
+   <div class="icon2">
+    <i class="fa-solid fa-briefcase" style="color: #000000;"></i>
+    <h5 class="para">Work</h5>
+   </div>
+   </div>
+   
+    <div class="today"><%=date %></div>
+    <div class="list">
+      <%if(task.length!=0)
+      {
+        for(var i=0;i<task.length;i++)
+        {%>
+          <div class="tasks">
+          <input type="checkbox" class="checkbox" name="checkbox">
+          <p><%=task[i]%></p>
+          </div>
+        <%}
+      }%>
+      <form action="/" class="form" method="post">
+      <input type="text"  id="text" placeholder="New Item" name="userinput">
+      <button id="add" type="submit">+</button>
+     </form>
+    
+    <form action="/submit" method="post">
+            <button id="empty" type="submit">Empty List</button>
+        </form>
+        </div>
+        
+        <footer> Copyright © komal</footer> 
+          
+  </div>
+  <script>
+    $(".checkbox").click(function(){
+      $(this).siblings("p").toggleClass("strike");
+});
+
+    </script>
+   
+        
+   
+  
+  <script src="index.js" charset="utf-8"></scriptsrc></script>
+</body>
+</html>
